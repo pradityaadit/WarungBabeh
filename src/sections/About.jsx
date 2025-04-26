@@ -89,21 +89,22 @@ const About = () => {
               Our Story
             </h3>
             <p className="text-gray-700 mb-6">
-              Founded in 2021, Warung Babeh began as a small group of friends
-              who shared a passion for gaming. As word spread about our
-              welcoming atmosphere and engaging activities, our community
-              quickly grew into the vibrant hub it is today.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              necessitatibus velit vel corporis libero rerum odit laboriosam
+              odio, quo, accusamus qui est alias cupiditate, voluptatum eum?
+              Magni tenetur doloribus voluptas.
             </p>
             <p className="text-gray-700 mb-6">
-              The name "Warung Babeh" reflects our community's spirit: "Warung"
-              being a small, friendly gathering place, and "Babeh" an endearing
-              term for "father" – together representing a familial space where
-              everyone is welcome.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              rem! Accusamus, ex, aspernatur ab hic quas corporis nobis totam
+              voluptas saepe perferendis veritatis unde architecto placeat
+              facere quaerat repellat ipsum?
             </p>
             <p className="text-gray-700">
-              Today, we host regular events, game nights, watch parties, and
-              casual hangouts for members from diverse backgrounds and
-              interests, united by friendship and mutual respect.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus laborum autem mollitia ab qui dolores commodi
+              libero doloremque labore saepe tenetur ad omnis ea, iste facere
+              magnam architecto neque aliquam?
             </p>
           </AnimatedSection>
         </div>
