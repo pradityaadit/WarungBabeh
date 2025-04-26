@@ -1,65 +1,76 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedSection from "../components/AnimatedSection";
+import pic1 from "../img/galery/pic1.png";
+import pic2 from "../img/galery/pic2.png";
+import pic3 from "../img/galery/pic3.png";
+import pic4 from "../img/galery/pic4.jpg";
+import pic5 from "../img/galery/pic5.jpg";
+import pic6 from "../img/galery/pic6.jpg";
+import pic7 from "../img/galery/pic7.jpg";
+import pic8 from "../img/galery/pic8.png";
+import pic9 from "../img/galery/pic9.png";
+import pic10 from "../img/galery/pic10.png";
+import pic11 from "../img/galery/pic11.png";
 
 const Gallery = () => {
   const [showAll, setShowAll] = useState(false);
 
   const galleryItems = [
     {
-      image: "src/img/galery/pic1.png",
+      image: pic1,
       title: "Indo Voice",
       description: "Katanya biar ala-ala romance titanic gituuu.",
     },
     {
-      image: "src/img/galery/pic2.png",
+      image: pic2,
       title: "Indo Voice",
       description: "Kenny Hitam Legam bangetttt.",
     },
     {
-      image: "src/img/galery/pic3.png",
+      image: pic3,
       title: "Sungai Nil",
       description: "Anak Petualang lagi dipimpin sama panji petualang",
     },
     {
-      image: "src/img/galery/pic8.png",
+      image: pic8,
       title: "Desa Indo",
       description: "Keluarga Besar Warbeh Ceunaahh. ✌️",
     },
     {
-      image: "src/img/galery/pic5.jpg",
+      image: pic5,
       title: "Photoboth",
       description: "Sayyy Cheeeshhhhhhhhhhh. ✌️",
     },
     {
-      image: "src/img/galery/pic6.jpg",
+      image: pic6,
       title: "Photoboth",
       description: "Sayyy Cheeeshhhhhhhhhhh. ✌️",
     },
     {
-      image: "src/img/galery/pic7.jpg",
+      image: pic7,
       title: "Photoboth",
       description: "Sayyy Cheeeshhhhhhhhhhh. ✌️",
     },
     // Additional gallery items
     {
-      image: "src/img/galery/pic4.jpg",
+      image: pic4,
       title: "Photoboth",
       description: "Sayyy Cheeeshhhhhhhhhhh. ✌️",
     },
     {
-      image: "src/img/galery/pic9.png",
+      image: pic9,
       title: "Hutan Indoo",
       description: "Adit Dan Fahrul, sama kuntilanak deng 1 nyelip.",
     },
 
     {
-      image: "src/img/galery/pic10.png",
+      image: pic10,
       title: "Photoboth",
       description: "Duluuuu kitaaa masihh remajaaa -Oliver1995.",
     },
     {
-      image: "src/img/galery/pic11.png",
+      image: pic11,
       title: "Apart BSD",
       description: "Capek Bet Mabuk dulu ga sihhh.",
     },

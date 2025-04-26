@@ -3,6 +3,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import AnimatedSection from "../components/AnimatedSection";
 import { FaDiscord, FaTwitter, FaInstagram } from "react-icons/fa";
 import kenny from "../img/members/kenny.png";
+import fahrul from "../img/members/fahrul.png";
+import oliver from "../img/members/oliver.png";
+import adit from "../img/members/adit.png";
+import apin from "../img/members/apin.png";
+import awe from "../img/members/awe.png";
+import fex from "../img/members/fex.png";
+import loey from "../img/members/loey.png";
+import oreo from "../img/members/oreo.png";
+import kev from "../img/members/kev.png";
 
 const Members = () => {
   const [showAll, setShowAll] = useState(false);
@@ -22,7 +31,7 @@ const Members = () => {
     {
       name: "Fahrul",
       role: "Sub Kage",
-      image: "src/img/members/fahrul.png",
+      image: fahrul,
       bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
         discord: "#",
@@ -33,7 +42,7 @@ const Members = () => {
     {
       name: "OliverSmith",
       role: "Sub Kage",
-      image: "src/img/members/oliver.png",
+      image: oliver,
       bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
         discord: "#",
@@ -44,7 +53,7 @@ const Members = () => {
     {
       name: "Adit",
       role: "Sub Kage",
-      image: "src/img/members/adit.png",
+      image: adit,
       bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
         discord: "#",
@@ -55,7 +64,7 @@ const Members = () => {
     {
       name: "Apin",
       role: "Sub Kage",
-      image: "src/img/members/apin.png",
+      image: apin,
       bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
         discord: "#",
@@ -66,7 +75,7 @@ const Members = () => {
     {
       name: "Oreoo",
       role: "Sub Kage",
-      image: "src/img/members/oreo.png",
+      image: oreo,
       bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
         discord: "#",
@@ -78,7 +87,7 @@ const Members = () => {
     {
       name: "Aweee",
       role: "Sub Kage",
-      image: "src/img/members/awe.png",
+      image: awe,
       bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
         discord: "#",
@@ -89,7 +98,7 @@ const Members = () => {
     {
       name: "Fexxx",
       role: "Brother",
-      image: "src/img/members/fex.png",
+      image: fex,
       bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
         discord: "#",
@@ -101,7 +110,19 @@ const Members = () => {
     {
       name: "Kavien",
       role: "Brother",
-      image: "src/img/members/kev.png",
+      image: kev,
+      bio: "Creative mind behind our most memorable community events and gatherings.",
+      social: {
+        discord: "#",
+        instagram: "#",
+        twitch: "#",
+      },
+    },
+
+    {
+      name: "Loey",
+      role: "Girls",
+      image: loey,
       bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
         discord: "#",

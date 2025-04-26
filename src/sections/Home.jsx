@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { FaArrowDown, FaDiscord } from "react-icons/fa";
+import home from "../img/members/home.png";
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('src/img/members/home.png')",
+            backgroundImage: `url(${home}) `,
             backgroundPosition: "center 30%", // geser sedikit ke bawah
           }}
         >
