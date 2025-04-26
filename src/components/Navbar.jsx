@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
-import { motion, AnimatePresence } from 'framer-motion';
-import { FaDiscord, FaBars, FaTimes } from 'react-icons/fa';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaDiscord, FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -15,18 +15,18 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [scrolled]);
 
   const navLinks = [
-    { name: 'Home', to: 'home' },
-    { name: 'About', to: 'about' },
-    { name: 'Gallery', to: 'gallery' },
-    { name: 'Members', to: 'members' },
-    { name: 'Story', to: 'story' },
+    { name: "Home", to: "home" },
+    { name: "About", to: "about" },
+    { name: "Gallery", to: "gallery" },
+    { name: "Members", to: "members" },
+    { name: "Story", to: "story" },
   ];
 
   const toggleMobileMenu = () => {
@@ -38,9 +38,9 @@ const Navbar = () => {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        transition={{ type: 'spring', stiffness: 50 }}
+        transition={{ type: "spring", stiffness: 50 }}
         className={`fixed w-full z-50 transition-all duration-300 ${
-          scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
+          scrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
         }`}
       >
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
@@ -53,10 +53,12 @@ const Navbar = () => {
           >
             <motion.div
               whileHover={{ scale: 1.05 }}
-              transition={{ type: 'spring', stiffness: 300 }}
+              transition={{ type: "spring", stiffness: 300 }}
               className="font-serif text-2xl font-bold"
             >
-              <span className={scrolled ? 'text-blue-900' : 'text-white'}>Warung</span>
+              <span className={scrolled ? "text-blue-900" : "text-white"}>
+                Warung
+              </span>
               <span className="text-amber-500"> Babeh</span>
             </motion.div>
           </Link>
@@ -72,7 +74,9 @@ const Navbar = () => {
                 offset={-70}
                 duration={500}
                 className={`nav-link cursor-pointer transition-colors font-medium ${
-                  scrolled ? 'text-gray-800 hover:text-blue-900' : 'text-white hover:text-amber-300'
+                  scrolled
+                    ? "text-gray-800 hover:text-blue-900"
+                    : "text-white hover:text-amber-300"
                 }`}
               >
                 {link.name}
@@ -81,7 +85,7 @@ const Navbar = () => {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="https://discord.gg/"
+              href="https://discord.gg/HDvdwgkvdD"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 bg-blue-900 hover:bg-blue-800 text-white rounded-full transition-all"
@@ -96,7 +100,7 @@ const Navbar = () => {
             <button
               onClick={toggleMobileMenu}
               className={`p-2 rounded-md ${
-                scrolled ? 'text-gray-800' : 'text-white'
+                scrolled ? "text-gray-800" : "text-white"
               }`}
             >
               {mobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -110,7 +114,7 @@ const Navbar = () => {
         {mobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
+            animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
             className="fixed top-16 left-0 right-0 z-40 bg-white shadow-lg md:hidden"

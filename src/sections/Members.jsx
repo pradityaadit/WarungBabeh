@@ -1,100 +1,112 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import AnimatedSection from '../components/AnimatedSection';
-import { FaDiscord, FaTwitter, FaTwitch } from 'react-icons/fa';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import AnimatedSection from "../components/AnimatedSection";
+import { FaDiscord, FaTwitter, FaTwitch, FaInstagram } from "react-icons/fa";
 
 const Members = () => {
   const [showAll, setShowAll] = useState(false);
 
   const members = [
     {
-      name: "Alex Johnson",
-      role: "Community Founder",
-      image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600",
+      name: "Kenny",
+      role: "Kage",
+      image: "src/img/members/kenny.png",
       bio: "Gaming enthusiast and community builder who created Warung Babeh to bring people together.",
       social: {
-        discord: "#alex1234",
-        twitter: "alexj",
-        twitch: "alexplays"
-      }
+        discord: "#",
+        instagram: "https://www.instagram.com/kenyyze",
+        twitch: "#",
+      },
     },
     {
-      name: "Sarah Chen",
-      role: "Event Coordinator",
-      image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
+      name: "Fahrul",
+      role: "Sub Kage",
+      image: "src/img/members/fahrul.png",
       bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
-        discord: "#sarahc",
-        twitter: "sarahchen",
-        twitch: "sarahgames"
-      }
+        discord: "#",
+        instagram: "#",
+        twitch: "#",
+      },
     },
     {
-      name: "Marcus Williams",
-      role: "Gaming Admin",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
-      bio: "Competitive gamer who manages our tournaments and gaming events.",
+      name: "OliverSmith",
+      role: "Sub Kage",
+      image: "src/img/members/oliver.png",
+      bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
-        discord: "#marcgamer",
-        twitter: "marcwilliams",
-        twitch: "marcgaming"
-      }
+        discord: "#",
+        instagram: "#",
+        twitch: "#",
+      },
     },
     {
-      name: "Priya Patel",
-      role: "Content Creator",
-      image: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600",
-      bio: "Digital artist and streamer who creates amazing content for our community.",
+      name: "Adit",
+      role: "Sub Kage",
+      image: "src/img/members/adit.png",
+      bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
-        discord: "#priyap",
-        twitter: "priyaart",
-        twitch: "priyacreates"
-      }
+        discord: "#",
+        instagram: "#",
+        twitch: "#",
+      },
     },
     {
-      name: "David Kim",
-      role: "Tech Support",
-      image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=600",
-      bio: "Our go-to person for all technical issues and server management.",
+      name: "Apin",
+      role: "Sub Kage",
+      image: "src/img/members/apin.png",
+      bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
-        discord: "#davidtech",
-        twitter: "davidkim",
-        twitch: "davidtech"
-      }
+        discord: "#",
+        instagram: "#",
+        twitch: "#",
+      },
     },
     {
-      name: "Emma Rodriguez",
-      role: "Community Moderator",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600",
-      bio: "Dedicated to keeping our community welcoming and respectful for everyone.",
+      name: "Oreoo",
+      role: "Sub Kage",
+      image: "src/img/members/oreo.png",
+      bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
-        discord: "#emmarodz",
-        twitter: "emmarod",
-        twitch: "emmagames"
-      }
+        discord: "#",
+        instagram: "#",
+        twitch: "#",
+      },
     },
     // Additional members
     {
-      name: "Michael Chang",
-      role: "Event Host",
-      image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600",
-      bio: "Enthusiastic event host who brings energy and excitement to our community gatherings.",
+      name: "Aweee",
+      role: "Sub Kage",
+      image: "src/img/members/awe.png",
+      bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
-        discord: "#michaelc",
-        twitter: "michaelchang",
-        twitch: "michaelstreams"
-      }
+        discord: "#",
+        instagram: "#",
+        twitch: "#",
+      },
     },
     {
-      name: "Lisa Anderson",
-      role: "Art Curator",
-      image: "https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=600",
-      bio: "Talented artist who manages our creative showcases and art events.",
+      name: "Fexxx",
+      role: "Brother",
+      image: "src/img/members/fex.png",
+      bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
-        discord: "#lisaart",
-        twitter: "lisaanderson",
-        twitch: "lisacreates"
-      }
+        discord: "#",
+        instagram: "#",
+        twitch: "#",
+      },
+    },
+
+    {
+      name: "Kavien",
+      role: "Brother",
+      image: "src/img/members/kev.png",
+      bio: "Creative mind behind our most memorable community events and gatherings.",
+      social: {
+        discord: "#",
+        instagram: "#",
+        twitch: "#",
+      },
     },
     // Add more members as needed...
   ];
@@ -115,7 +127,7 @@ const Members = () => {
       y: 0,
       opacity: 1,
       transition: {
-        type: 'spring',
+        type: "spring",
         stiffness: 100,
         damping: 15,
       },
@@ -128,9 +140,12 @@ const Members = () => {
     <section className="py-20 bg-white" id="members">
       <div className="container mx-auto px-4 md:px-6">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-serif text-blue-900">Meet Our <span className="text-amber-500">Team</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-serif text-blue-900">
+            Meet Our <span className="text-amber-500">Members</span>
+          </h2>
           <p className="text-lg text-gray-700">
-            The dedicated individuals who keep our community thriving and create amazing experiences for all members.
+            The dedicated individuals who keep our community thriving and create
+            amazing experiences for all members.
           </p>
         </AnimatedSection>
 
@@ -151,29 +166,54 @@ const Members = () => {
                 exit="hidden"
                 className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
               >
-                <div className="relative overflow-hidden group h-64">
-                  <img 
-                    src={member.image} 
-                    alt={member.name} 
-                    className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110" 
+                <div className="relative overflow-hidden group h-[500px]">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover object-[center_10%] transition-all duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-70"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-xl font-bold font-serif">{member.name}</h3>
+                    <h3 className="text-xl text-amber-500 font-bold font-serif">
+                      {member.name}
+                    </h3>
                     <p className="text-blue-100">{member.role}</p>
                   </div>
                 </div>
                 <div className="p-6">
                   <p className="text-gray-700 mb-4">{member.bio}</p>
                   <div className="flex items-center space-x-4">
-                    <a href="#" className="text-gray-500 hover:text-blue-900 transition-colors">
+                    <a
+                      href={
+                        member.social?.discord
+                          ? `https://discord.com/users/${member.social.discord}`
+                          : "#"
+                      }
+                      className="text-gray-500 hover:text-blue-900 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FaDiscord className="text-lg" />
                     </a>
-                    <a href="#" className="text-gray-500 hover:text-blue-900 transition-colors">
-                      <FaTwitter className="text-lg" />
+                    <a
+                      href={member.social?.instagram || "#"}
+                      className="text-gray-500 hover:text-blue-900 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaInstagram className="text-lg" />
                     </a>
-                    <a href="#" className="text-gray-500 hover:text-blue-900 transition-colors">
-                      <FaTwitch className="text-lg" />
+                    <a
+                      href={
+                        member.social?.twitter
+                          ? `https://twitter.com/${member.social.twitter}`
+                          : "#"
+                      }
+                      className="text-gray-500 hover:text-blue-900 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaTwitter className="text-lg" />
                     </a>
                   </div>
                 </div>
@@ -190,19 +230,20 @@ const Members = () => {
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-blue-900 text-white font-medium rounded-full hover:bg-blue-800 transition-all inline-flex items-center gap-2"
             >
-              {showAll ? 'Show Less' : 'Show More Members'}
+              {showAll ? "Show Less" : "Show More Members"}
             </motion.button>
           </AnimatedSection>
         )}
 
         <AnimatedSection className="text-center mt-16">
           <p className="text-lg text-gray-700 mb-8">
-            Interested in being part of our vibrant community? Join our Discord and become a member today!
+            Interested in being part of our vibrant community? Join our Discord
+            and become a member today!
           </p>
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="https://discord.gg/"
+            href="https://discord.gg/HDvdwgkvdD"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-blue-900 text-white font-medium rounded-full hover:bg-blue-800 transition-all"
