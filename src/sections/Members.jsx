@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedSection from "../components/AnimatedSection";
-import { FaDiscord, FaTwitter, FaTwitch, FaInstagram } from "react-icons/fa";
+import { FaDiscord, FaTwitter, FaInstagram } from "react-icons/fa";
 import kenny from "../img/members/kenny.png";
 
 const Members = () => {
@@ -11,9 +11,7 @@ const Members = () => {
     {
       name: "Kenny",
       role: "Kage",
-      image: {
-        kenny,
-      },
+      image: kenny,
       bio: "Gaming enthusiast and community builder who created Warung Babeh to bring people together.",
       social: {
         discord: "#",
