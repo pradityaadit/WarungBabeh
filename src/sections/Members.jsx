@@ -12,6 +12,8 @@ import fex from "../img/members/fex.png";
 import loey from "../img/members/loey.png";
 import oreo from "../img/members/oreo.png";
 import kev from "../img/members/kev.png";
+import winter from "../img/members/winter.jpg";
+import lupy from "../img/members/lupy.png";
 
 const Members = () => {
   const [showAll, setShowAll] = useState(false);
@@ -123,6 +125,28 @@ const Members = () => {
       name: "Loey",
       role: "Girls",
       image: loey,
+      bio: "Creative mind behind our most memorable community events and gatherings.",
+      social: {
+        discord: "#",
+        instagram: "#",
+        twitch: "#",
+      },
+    },
+    {
+      name: "Winter",
+      role: "Girls",
+      image: winter,
+      bio: "Creative mind behind our most memorable community events and gatherings.",
+      social: {
+        discord: "#",
+        instagram: "#",
+        twitch: "#",
+      },
+    },
+    {
+      name: "Lupy",
+      role: "Girls",
+      image: lupy,
       bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
         discord: "#",
