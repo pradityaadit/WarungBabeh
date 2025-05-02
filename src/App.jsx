@@ -29,7 +29,7 @@ function App() {
         style={{ backgroundImage: `url(${oreoGila})` }}
       >
         <motion.div
-          className="text-4xl md:text-6xl font-serif font-bold"
+          className="text-4xl md:text-6xl font-serif font-bold text-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}

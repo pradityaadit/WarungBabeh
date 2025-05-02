@@ -64,9 +64,9 @@ const About = () => {
             About <span className="text-amber-500">Warung Babeh</span>
           </h2>
           <p className="text-lg text-gray-700 mb-8">
-            Warung Babeh is more than just a Discord community—it's a virtual
-            home where friends from around the world connect, share experiences,
-            and create lasting memories together.
+            Warung Babeh itu bukan sekadar komunitas di Discord—tapi udah kayak
+            rumah virtual tempat teman-teman dari berbagai tempat kumpul,
+            berbagi cerita, dan bikin kenangan bareng.
           </p>
         </AnimatedSection>
 
@@ -78,7 +78,7 @@ const About = () => {
             <motion.img
               src={about}
               alt="Community gathering"
-              className="rounded-lg shadow-xl max-w-full h-[600px] object-cover"
+              className="rounded-lg shadow-xl max-w-full h-[500px] object-cover"
               whileHover={{ scale: 1.03 }}
               transition={{ type: "spring", stiffness: 300 }}
             />
@@ -86,25 +86,25 @@ const About = () => {
 
           <AnimatedSection className="flex flex-col justify-center" delay={0.4}>
             <h3 className="text-2xl font-bold mb-4 font-serif text-blue-900">
-              Our Story
+              About Warung Babeh
             </h3>
             <p className="text-gray-700 mb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              necessitatibus velit vel corporis libero rerum odit laboriosam
-              odio, quo, accusamus qui est alias cupiditate, voluptatum eum?
-              Magni tenetur doloribus voluptas.
+              Warung Babeh adalah tempat berkumpulnya teman-teman yang suka main
+              Roblox dan ngobrol santai. Di sini, kita nggak cuma main game
+              bareng, tapi juga saling sharing, cerita, dan seru-seruan bareng
+              kayak di tongkrongan virtual.
             </p>
             <p className="text-gray-700 mb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-              rem! Accusamus, ex, aspernatur ab hic quas corporis nobis totam
-              voluptas saepe perferendis veritatis unde architecto placeat
-              facere quaerat repellat ipsum?
+              Komunitas ini terbuka buat siapa aja—nggak peduli kamu baru kenal
+              Roblox atau udah lama main, yang penting senang kumpul dan
+              ngobrol. Kadang kita ngobrolin game, kadang juga bahas hal-hal
+              ringan di luar itu. Yang penting, suasananya nyaman dan saling
+              support.
             </p>
             <p className="text-gray-700">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus laborum autem mollitia ab qui dolores commodi
-              libero doloremque labore saepe tenetur ad omnis ea, iste facere
-              magnam architecto neque aliquam?
+              Kalau kamu lagi cari tempat buat main, berbagi cerita, atau
+              sekadar nyari teman baru, yuk gabung ke Warung Babeh. Kita tunggu
+              di Discord!
             </p>
           </AnimatedSection>
         </div>

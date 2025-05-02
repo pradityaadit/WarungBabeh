@@ -13,6 +13,7 @@ import loey from "../img/members/loey.png";
 import oreo from "../img/members/oreo.png";
 import kev from "../img/members/kev.png";
 import winter from "../img/members/winter.jpg";
+import queen from "../img/members/queenshaa.png";
 import lupy from "../img/members/lupy.png";
 
 const Members = () => {
@@ -74,29 +75,7 @@ const Members = () => {
         twitch: "#",
       },
     },
-    {
-      name: "Oreoo",
-      role: "Sub Kage",
-      image: oreo,
-      bio: "Creative mind behind our most memorable community events and gatherings.",
-      social: {
-        discord: "#",
-        instagram: "#",
-        twitch: "#",
-      },
-    },
-    // Additional members
-    {
-      name: "Aweee",
-      role: "Sub Kage",
-      image: awe,
-      bio: "Creative mind behind our most memorable community events and gatherings.",
-      social: {
-        discord: "#",
-        instagram: "#",
-        twitch: "#",
-      },
-    },
+
     {
       name: "Fexxx",
       role: "Brother",
@@ -113,6 +92,30 @@ const Members = () => {
       name: "Kavien",
       role: "Brother",
       image: kev,
+      bio: "Creative mind behind our most memorable community events and gatherings.",
+      social: {
+        discord: "#",
+        instagram: "#",
+        twitch: "#",
+      },
+    },
+
+    {
+      name: "Oreoo",
+      role: "Sub Kage",
+      image: oreo,
+      bio: "Creative mind behind our most memorable community events and gatherings.",
+      social: {
+        discord: "#",
+        instagram: "#",
+        twitch: "#",
+      },
+    },
+    // Additional members
+    {
+      name: "Aweee",
+      role: "Girls",
+      image: awe,
       bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
         discord: "#",
@@ -144,6 +147,17 @@ const Members = () => {
       },
     },
     {
+      name: "QueenShaa",
+      role: "Girls",
+      image: queen,
+      bio: "Creative mind behind our most memorable community events and gatherings.",
+      social: {
+        discord: "#",
+        instagram: "#",
+        twitch: "#",
+      },
+    },
+    {
       name: "Lupy",
       role: "Girls",
       image: lupy,
@@ -154,6 +168,7 @@ const Members = () => {
         twitch: "#",
       },
     },
+
     // Add more members as needed...
   ];
 
