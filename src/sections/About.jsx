@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import AnimatedSection from "../components/AnimatedSection";
 import { FaUsers, FaGamepad, FaComments, FaHeart } from "react-icons/fa";
 import about from "../img/members/about.png";
+import ScrollVelocity from "../components/ScrollVelocity";
 
 const About = () => {
   const features = [
@@ -59,18 +60,11 @@ const About = () => {
   return (
     <section className="py-20 bg-white" id="about">
       <div className="container mx-auto px-4 md:px-6">
-        <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-serif text-blue-900">
-            About <span className="text-amber-500">Warung Babeh</span>
-          </h2>
-          <p className="text-lg text-gray-700 mb-8">
-            Warung Babeh itu bukan sekadar komunitas di Discord—tapi udah kayak
-            rumah virtual tempat teman-teman dari berbagai tempat kumpul,
-            berbagi cerita, dan bikin kenangan bareng.
-          </p>
-        </AnimatedSection>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
+        <ScrollVelocity
+          texts={["Welcome To", "Warung Babeh"]}
+          className="mb-2 text-amber-500 italic font-bold"
+        />
+        <div className="grid mt-4 grid-cols-1 md:grid-cols-2 gap-10 mb-16">
           <AnimatedSection
             className="flex items-center justify-center"
             delay={0.2}
@@ -78,30 +72,30 @@ const About = () => {
             <motion.img
               src={about}
               alt="Community gathering"
-              className="rounded-lg shadow-xl max-w-full h-[500px] object-cover"
+              className="rounded-full shadow-xl max-w-full h-[500px] object-cover"
               whileHover={{ scale: 1.03 }}
               transition={{ type: "spring", stiffness: 300 }}
             />
           </AnimatedSection>
 
           <AnimatedSection className="flex flex-col justify-center" delay={0.4}>
-            <h3 className="text-2xl font-bold mb-4 font-serif text-blue-900">
-              About Warung Babeh
+            <h3 className="text-4xl font-bold mb-4 font-serif text-blue-900">
+              About <span className="text-amber-500">Warung Babeh </span>
             </h3>
-            <p className="text-gray-700 mb-6">
+            <p className="text-gray-700 mb-6 text-[18px]">
               Warung Babeh adalah tempat berkumpulnya teman-teman yang suka main
               Roblox dan ngobrol santai. Di sini, kita nggak cuma main game
               bareng, tapi juga saling sharing, cerita, dan seru-seruan bareng
               kayak di tongkrongan virtual.
             </p>
-            <p className="text-gray-700 mb-6">
+            <p className="text-gray-700 mb-6 text-[18px]">
               Komunitas ini terbuka buat siapa aja—nggak peduli kamu baru kenal
               Roblox atau udah lama main, yang penting senang kumpul dan
               ngobrol. Kadang kita ngobrolin game, kadang juga bahas hal-hal
               ringan di luar itu. Yang penting, suasananya nyaman dan saling
               support.
             </p>
-            <p className="text-gray-700">
+            <p className="text-gray-700 mb-6 text-[18px]">
               Kalau kamu lagi cari tempat buat main, berbagi cerita, atau
               sekadar nyari teman baru, yuk gabung ke Warung Babeh. Kita tunggu
               di Discord!

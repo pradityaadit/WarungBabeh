@@ -11,6 +11,7 @@ import Members from "./sections/Members";
 import Story from "./sections/Story";
 import CustomCursor from "./components/CustomCursor";
 import oreoGila from "../src/img/members/oreoGila.png";
+import CircularGallery from "./components/CircularGallery";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -71,8 +72,19 @@ function App() {
         <Gallery />
       </Element>
 
-      <Element name="members" className="element">
-        <Members />
+      <Element name="members" className="element mb-5">
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-serif text-blue-900">
+            Meet Our <span className="text-amber-500">Members</span>
+          </h2>
+          <p className="text-lg text-gray-700">
+            The dedicated individuals who keep our community thriving and create
+            amazing experiences for all members.
+          </p>
+        </div>
+        <div style={{ height: "600px", position: "relative" }}>
+          <CircularGallery bend={3} textColor="black" borderRadius={0.05} />
+        </div>
       </Element>
 
       {/* <Element name="story" className="element">

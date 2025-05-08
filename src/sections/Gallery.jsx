@@ -12,6 +12,14 @@ import pic8 from "../img/galery/pic8.png";
 import pic9 from "../img/galery/pic9.png";
 import pic10 from "../img/galery/pic10.png";
 import pic11 from "../img/galery/pic11.png";
+import pic12 from "../img/galery/pic12.png";
+import pic13 from "../img/galery/pic13.png";
+import pic14 from "../img/galery/pic14.png";
+import pic15 from "../img/galery/pic15.png";
+import pic16 from "../img/galery/pic16.png";
+import pic17 from "../img/galery/pic17.png";
+import pic18 from "../img/galery/pic18.png";
+import pic19 from "../img/galery/pic19.png";
 
 const Gallery = () => {
   const [showAll, setShowAll] = useState(false);
@@ -73,6 +81,46 @@ const Gallery = () => {
       image: pic11,
       title: "Apart BSD",
       description: "Capek Bet Mabuk dulu ga sihhh.",
+    },
+    {
+      image: pic12,
+      title: "Desa Indo",
+      description: "Desaaa indooo...",
+    },
+    {
+      image: pic13,
+      title: "Pendakian",
+      description: "Awass Jatohh.",
+    },
+    {
+      image: pic14,
+      title: "Gunung Salak",
+      description: "Berapa MDPL kak ?.",
+    },
+    {
+      image: pic15,
+      title: "Gunung Tangkuban Perahu",
+      description: ".",
+    },
+    {
+      image: pic16,
+      title: "Indo Voice",
+      description: ".",
+    },
+    {
+      image: pic17,
+      title: "Desa Indo",
+      description: "Batikkk dayss.",
+    },
+    {
+      image: pic18,
+      title: "Desa Indo",
+      description: "Hantu yang nari di Desa Penari.",
+    },
+    {
+      image: pic19,
+      title: "Gangstaa",
+      description: "Damnnn broooo.",
     },
   ];
 
