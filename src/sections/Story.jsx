@@ -1,118 +1,105 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import AnimatedSection from '../components/AnimatedSection';
+import React from "react";
+import { motion } from "framer-motion";
+import AnimatedSection from "../components/AnimatedSection";
 
-const Story = () => {
-  const timelineEvents = [
+const Rules = () => {
+  const rulesList = [
     {
-      year: "2021",
-      title: "The Beginning",
-      description: "Warung Babeh was founded by a small group of friends who wanted to create a welcoming space for gamers and content creators.",
-      image: "https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      title: "Sopan Santun Dulu, Bro!",
+      emoji: "🗣️",
+      description:
+        "Hormati semua member, admin, dan tamu warung.\n❌ No toxic, no rasis, no bawa-bawa SARA, dan no drama.\n💬 Selingan becandaan boleh, asal ga kelewatan.",
     },
     {
-      year: "2022",
-      title: "Growing Community",
-      description: "Our community expanded rapidly as word spread about our friendly atmosphere and engaging events. We reached 500 members!",
-      image: "https://images.pexels.com/photos/5082578/pexels-photo-5082578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      title: "Dilarang Bikin Gaduh Warung",
+      emoji: "🚫",
+      description:
+        "Spam chat, flood emoji, atau caps lock marah-marah = OUT.\n🎧 Voice channel? Gunakan dengan tertib. Jangan berisik kaya pasar malam.",
     },
     {
-      year: "2023",
-      title: "First Annual Tournament",
-      description: "We hosted our first major gaming tournament with participants from around the world, strengthening our global connections.",
-      image: "https://images.pexels.com/photos/8107903/pexels-photo-8107903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      title: "Jualan Harus Izin BABEH",
+      emoji: "💸",
+      description:
+        "Promosi, jual beli, atau share link (termasuk Discord lain) WAJIB izin ke admin.\n🛒 Kalo ngasal promosi = auto ban, maaf ya.",
     },
     {
-      year: "2024",
-      title: "Digital Expansion",
-      description: "Launching our official website and expanding our online presence to reach even more like-minded individuals.",
-      image: "https://images.pexels.com/photos/7915541/pexels-photo-7915541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      title: "Konten Harus Sehat!",
+      emoji: "🔞",
+      description:
+        "Konten NSFW, kekerasan ekstrem, atau hal-hal aneh = dilarang keras.\n📸 Share foto atau meme? Pastikan masih aman dan lucu buat semua umur.",
     },
     {
-      year: "2025",
-      title: "The Future",
-      description: "Looking ahead, we plan to organize our first in-person meetup and continue growing our vibrant community.",
-      image: "https://images.pexels.com/photos/8131576/pexels-photo-8131576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-    }
+      title: "Main ROBLOX, Jangan Jadi Toxic BOCIL",
+      emoji: "🎮",
+      description:
+        "Di dalam game, tetap jaga etika. Jangan curang, nge-cheat, atau nyusahin orang lain.\n👊 Kalo ketahuan, siap-siap masuk daftar hitam WARUNG BABEH.",
+    },
+    {
+      title: "Pake Nickname yang Pantes",
+      emoji: "🆔",
+      description:
+        "Gunakan nama yang gampang dikenal & tidak mengandung hal yang menyinggung.\n📛 Avatar atau profile pic juga jangan yang aneh-aneh.",
+    },
+    {
+      title: "Patuh Sama Admin & Moderator",
+      emoji: "👮",
+      description:
+        "Admin dan mod bukan preman warung, tapi penjaga ketertiban.\n🧹 Kalo diingatkan, terima baik-baik ya. Bandel = di-sweeping dari warung.",
+    },
+    {
+      title: "Laporkan Kalau Ada yang Aneh",
+      emoji: "🕵️‍♂️",
+      description:
+        "Lihat yang mencurigakan? Ada yang toxic? Langsung lapor ke admin.\n🤝 Kita jaga bareng-bareng kenyamanan warung ini.",
+    },
   ];
 
   return (
-    <section className="py-20 bg-gray-50" id="story">
+    <section className="py-20 bg-gray-50" id="rules">
       <div className="container mx-auto px-4 md:px-6">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-serif text-blue-900">Our <span className="text-amber-500">Journey</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-serif text-blue-900">
+            Warung Babeh <span className="text-amber-500">Rules</span>
+          </h2>
           <p className="text-lg text-gray-700">
-            From humble beginnings to a thriving community, explore the story of Warung Babeh's evolution over the years.
+            Demi kenyamanan bersama, harap patuhi peraturan berikut ini. Baca
+            baik-baik ya!
           </p>
         </AnimatedSection>
 
-        <div className="relative">
-          {/* Timeline Line */}
-          <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-1 bg-blue-200 transform md:translate-x-[-0.5px] hidden md:block"></div>
-
-          {/* Timeline Events */}
-          {timelineEvents.map((event, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {rulesList.map((rule, index) => (
             <AnimatedSection
               key={index}
-              className="mb-12 md:mb-24 relative"
-              delay={index * 0.2}
+              delay={index * 0.15}
+              className="bg-white w-[500px]  mx-auto p-6 rounded-xl shadow-md"
             >
-              <div className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center`}>
-                <div className="md:w-1/2 mb-6 md:mb-0 px-4">
-                  <motion.div
-                    whileHover={{ scale: 1.03 }}
-                    transition={{ type: 'spring', stiffness: 300 }}
-                    className={`bg-white p-6 rounded-xl shadow-lg ${
-                      index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'
-                    }`}
-                  >
-                    <div className="inline-block px-4 py-2 bg-blue-900 text-white rounded-full mb-4 font-bold">
-                      {event.year}
-                    </div>
-                    <h3 className="text-2xl font-bold mb-3 font-serif text-blue-900">{event.title}</h3>
-                    <p className="text-gray-700">{event.description}</p>
-                  </motion.div>
-                </div>
-                
-                <div className="md:w-1/2 px-4">
-                  <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ type: 'spring', stiffness: 300 }}
-                    className="rounded-xl overflow-hidden shadow-lg"
-                  >
-                    <img 
-                      src={event.image} 
-                      alt={event.title} 
-                      className="w-full h-auto object-cover" 
-                    />
-                  </motion.div>
-                </div>
-                
-                {/* Timeline Dot - only visible on md screens and up */}
-                <div className="absolute left-0 md:left-1/2 top-1/2 transform -translate-y-1/2 md:-translate-x-1/2 hidden md:block">
-                  <div className="w-6 h-6 rounded-full bg-amber-500 border-4 border-white"></div>
-                </div>
-              </div>
+              <motion.div
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <div className="text-4xl mb-4">{rule.emoji}</div>
+                <h3 className="text-2xl font-semibold mb-2 text-blue-900 font-serif">
+                  {rule.title}
+                </h3>
+                <p className="text-gray-700 whitespace-pre-line">
+                  {rule.description}
+                </p>
+              </motion.div>
             </AnimatedSection>
           ))}
         </div>
 
-        <AnimatedSection className="text-center mt-8">
+        <AnimatedSection className="text-center mt-16">
           <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-            We're proud of how far we've come, and excited about where we're going. 
-            The story of Warung Babeh continues to be written by every member who joins our community.
+            Yuk, kita jaga bareng-bareng kenyamanan dan keseruan di Warung
+            Babeh. Ingat, warung ini tempat nongkrong, bukan tempat ribut!{" "}
+            <br /> -ADMINGANTENG
           </p>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-block bg-blue-900 text-white font-medium px-8 py-4 rounded-full hover:bg-blue-800 transition-all cursor-pointer"
-          >
-            Be Part of Our Story
-          </motion.div>
         </AnimatedSection>
       </div>
     </section>
   );
 };
 
-export default Story;
+export default Rules;

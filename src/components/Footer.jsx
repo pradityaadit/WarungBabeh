@@ -1,23 +1,34 @@
-import React from 'react';
-import { Link } from 'react-scroll';
-import { motion } from 'framer-motion';
-import { FaDiscord, FaTwitter, FaInstagram, FaTwitch, FaYoutube, FaHeart } from 'react-icons/fa';
+import React from "react";
+import { Link } from "react-scroll";
+import { motion } from "framer-motion";
+import {
+  FaDiscord,
+  FaTwitter,
+  FaInstagram,
+  FaTwitch,
+  FaYoutube,
+  FaHeart,
+} from "react-icons/fa";
 
 const Footer = () => {
   const footerLinks = [
-    { name: 'Home', to: 'home' },
-    { name: 'About', to: 'about' },
-    { name: 'Gallery', to: 'gallery' },
-    { name: 'Members', to: 'members' },
-    { name: 'Story', to: 'story' },
+    { name: "Home", to: "home" },
+    { name: "About", to: "about" },
+    { name: "Gallery", to: "gallery" },
+    { name: "Members", to: "members" },
+    { name: "Rules", to: "story" },
   ];
 
   const socialLinks = [
-    { icon: <FaDiscord />, url: 'https://discord.gg/', label: 'Discord' },
-    { icon: <FaTwitter />, url: 'https://twitter.com/', label: 'Twitter' },
-    { icon: <FaInstagram />, url: 'https://instagram.com/', label: 'Instagram' },
-    { icon: <FaTwitch />, url: 'https://twitch.tv/', label: 'Twitch' },
-    { icon: <FaYoutube />, url: 'https://youtube.com/', label: 'YouTube' },
+    { icon: <FaDiscord />, url: "https://discord.gg/", label: "Discord" },
+    { icon: <FaTwitter />, url: "https://twitter.com/", label: "Twitter" },
+    {
+      icon: <FaInstagram />,
+      url: "https://instagram.com/",
+      label: "Instagram",
+    },
+    { icon: <FaTwitch />, url: "https://twitch.tv/", label: "Twitch" },
+    { icon: <FaYoutube />, url: "https://youtube.com/", label: "YouTube" },
   ];
 
   const containerVariants = {
@@ -49,8 +60,8 @@ const Footer = () => {
               <span className="text-amber-500"> Babeh</span>
             </div>
             <p className="text-blue-100 mb-6 max-w-md">
-              A vibrant community of friends sharing moments, games, and memories.
-              Join our Discord to be part of the family.
+              A vibrant community of friends sharing moments, games, and
+              memories. Join our Discord to be part of the family.
             </p>
             <motion.a
               whileHover={{ scale: 1.05 }}
@@ -64,10 +75,12 @@ const Footer = () => {
               Join Our Community
             </motion.a>
           </div>
-          
+
           {/* Quick Links */}
           <div className="col-span-1">
-            <h3 className="text-xl font-semibold mb-4 font-serif">Quick Links</h3>
+            <h3 className="text-xl font-semibold mb-4 font-serif">
+              Quick Links
+            </h3>
             <motion.ul
               variants={containerVariants}
               initial="hidden"
@@ -91,10 +104,12 @@ const Footer = () => {
               ))}
             </motion.ul>
           </div>
-          
+
           {/* Connect With Us */}
           <div className="col-span-1">
-            <h3 className="text-xl font-semibold mb-4 font-serif">Connect With Us</h3>
+            <h3 className="text-xl font-semibold mb-4 font-serif">
+              Connect With Us
+            </h3>
             <motion.div
               variants={containerVariants}
               initial="hidden"
@@ -119,11 +134,12 @@ const Footer = () => {
             </motion.div>
           </div>
         </div>
-        
+
         {/* Copyright */}
         <div className="pt-8 border-t border-blue-800 text-center text-blue-200">
           <p className="flex items-center justify-center gap-1">
-            © {new Date().getFullYear()} Warung Babeh. All rights reserved. Made with 
+            © {new Date().getFullYear()} Warung Babeh. All rights reserved. Made
+            with
             <FaHeart className="text-amber-500" /> in the community.
           </p>
         </div>

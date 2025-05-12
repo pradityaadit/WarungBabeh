@@ -26,7 +26,7 @@ const Navbar = () => {
     { name: "About", to: "about" },
     { name: "Gallery", to: "gallery" },
     { name: "Members", to: "members" },
-    { name: "Story", to: "story" },
+    { name: "Rules", to: "story" },
   ];
 
   const toggleMobileMenu = () => {

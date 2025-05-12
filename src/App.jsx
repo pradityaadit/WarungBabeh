@@ -91,9 +91,9 @@ function App() {
         </div>
       </Element>
 
-      {/* <Element name="story" className="element">
+      <Element name="story" className="element">
         <Story />
-      </Element> */}
+      </Element>
 
       <Footer />
 
