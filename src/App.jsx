@@ -15,6 +15,7 @@ import CircularGallery from "./components/CircularGallery";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [showChatbox, setShowChatbox] = useState(false);
 
   useEffect(() => {
     // Simulate loading
@@ -92,6 +93,32 @@ function App() {
       </Element> */}
 
       <Footer />
+
+      <div className="fixed bottom-4 right-4 z-50">
+        {showChatbox ? (
+          <div className="w-[350px] h-[500px] bg-white shadow-lg rounded-lg overflow-hidden relative">
+            <button
+              className="absolute bottom-2 right-2 bg-red-500 text-white px-2 py-1 text-xs rounded"
+              onClick={() => setShowChatbox(false)}
+            >
+              Close
+            </button>
+            <iframe
+              src="https://www.chatbase.co/chatbot-iframe/VjG2wSvV03rNik17OCbEF"
+              width="100%"
+              height="100%"
+              style={{ border: "none" }}
+            ></iframe>
+          </div>
+        ) : (
+          <button
+            onClick={() => setShowChatbox(true)}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-md"
+          >
+            Chat with AI Bot
+          </button>
+        )}
+      </div>
     </div>
   );
 }

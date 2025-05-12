@@ -39,7 +39,7 @@ const Navbar = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 50 }}
-        className={`fixed w-full z-50 p-8 transition-all duration-300 ${
+        className={`fixed w-full z-50 p-2 transition-all duration-300 ${
           scrolled ? "bg-white shadow-md p-4" : "bg-transparent py-4"
         }`}
       >
