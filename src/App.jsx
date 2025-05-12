@@ -13,6 +13,9 @@ import CustomCursor from "./components/CustomCursor";
 import oreoGila from "../src/img/members/oreoGila.png";
 import CircularGallery from "./components/CircularGallery";
 
+import { SlArrowDown } from "react-icons/sl";
+import { IoMdChatboxes } from "react-icons/io";
+
 function App() {
   const [loading, setLoading] = useState(true);
   const [showChatbox, setShowChatbox] = useState(false);
@@ -94,30 +97,39 @@ function App() {
 
       <Footer />
 
-      <div className="fixed bottom-4 right-4 z-50">
-        {showChatbox ? (
-          <div className="w-[350px] h-[500px] bg-white shadow-lg rounded-lg overflow-hidden relative">
-            <button
-              className="absolute bottom-2 right-2 bg-red-500 text-white px-2 py-1 text-xs rounded"
-              onClick={() => setShowChatbox(false)}
-            >
-              Close
-            </button>
+      <div className="fixed bottom-4 right-4 z-50 flex flex-col items-end space-y-2">
+        {/* Chatbox muncul saat showChatbox = true */}
+        {showChatbox && (
+          <div className="w-[350px] h-[500px] bg-white shadow-lg rounded-lg overflow-hidden">
             <iframe
               src="https://www.chatbase.co/chatbot-iframe/VjG2wSvV03rNik17OCbEF"
               width="100%"
               height="100%"
               style={{ border: "none" }}
+              title="Chatbot"
             ></iframe>
           </div>
-        ) : (
-          <button
-            onClick={() => setShowChatbox(true)}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-md"
-          >
-            Chat with AI Bot
-          </button>
         )}
+
+        {/* Tombol toggle + teks di atasnya kalau chatbox aktif */}
+        <div className="flex flex-col items-center">
+          {showChatbox && <div className="mb-1 text-sm text-gray-700"></div>}
+          <button
+            onClick={() => setShowChatbox(!showChatbox)}
+            className={`flex items-center justify-center p-3 rounded-full shadow-md transition-all
+            ${
+              showChatbox
+                ? "bg-blue-600 hover:bg-blue-700 text-white"
+                : "bg-blue-600 hover:bg-blue-700 text-white"
+            }`}
+          >
+            {showChatbox ? (
+              <SlArrowDown className="w-8 h-8 text-white" />
+            ) : (
+              <IoMdChatboxes className="w-8 h-8 text-white" />
+            )}
+          </button>
+        </div>
       </div>
     </div>
   );
