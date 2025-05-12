@@ -52,6 +52,11 @@ const Rules = () => {
       description:
         "Lihat yang mencurigakan? Ada yang toxic? Langsung lapor ke admin.\n🤝 Kita jaga bareng-bareng kenyamanan warung ini.",
     },
+    {
+      title: "Comming Soon",
+      emoji: "🔜",
+      description: "Akan ada beberapa peraturan baru di warung babeh.",
+    },
   ];
 
   return (
@@ -67,12 +72,12 @@ const Rules = () => {
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {rulesList.map((rule, index) => (
             <AnimatedSection
               key={index}
               delay={index * 0.15}
-              className="bg-white w-[500px]  mx-auto p-6 rounded-xl shadow-md"
+              className="bg-white  mx-auto p-6 rounded-xl shadow-md"
             >
               <motion.div
                 whileHover={{ scale: 1.03 }}
