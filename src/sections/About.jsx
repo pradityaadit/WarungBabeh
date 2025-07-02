@@ -60,10 +60,10 @@ const About = () => {
   return (
     <section className="py-20 bg-white" id="about">
       <div className="container mx-auto px-4 md:px-6">
-        <ScrollVelocity
+        {/* <ScrollVelocity
           texts={["Welcome To", "Warung Babeh"]}
           className="mb-2 text-amber-500 italic font-bold"
-        />
+        /> */}
         <div className="grid mt-4 grid-cols-1 md:grid-cols-2 gap-10 mb-16">
           <AnimatedSection
             className="flex items-center justify-center"
