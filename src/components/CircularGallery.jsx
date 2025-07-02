@@ -22,6 +22,7 @@ import kev from "../img/members/kev.png";
 import winter from "../img/members/winter.jpg";
 import queen from "../img/members/queenshaa.png";
 import lupy from "../img/members/lupy.png";
+import nicky from "../img/members/nicky.jpeg";
 
 function debounce(func, wait) {
   let timeout;
@@ -390,9 +391,15 @@ class App {
         image: adit,
         text: "Adit",
       },
+
       {
         image: apin,
         text: "Apin",
+      },
+
+      {
+        image: nicky,
+        text: "Nicky",
       },
       {
         image: awe,

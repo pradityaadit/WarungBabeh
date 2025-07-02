@@ -15,6 +15,7 @@ import kev from "../img/members/kev.png";
 import winter from "../img/members/winter.jpg";
 import queen from "../img/members/queenshaa.png";
 import lupy from "../img/members/lupy.png";
+import nicky from "../img/members/nicky.jpeg";
 
 const Members = () => {
   const [showAll, setShowAll] = useState(false);
@@ -161,6 +162,18 @@ const Members = () => {
       name: "Lupy",
       role: "Girls",
       image: lupy,
+      bio: "Creative mind behind our most memorable community events and gatherings.",
+      social: {
+        discord: "#",
+        instagram: "#",
+        twitch: "#",
+      },
+    },
+
+    {
+      name: "Nicky",
+      role: "Boys",
+      image: nicky,
       bio: "Creative mind behind our most memorable community events and gatherings.",
       social: {
         discord: "#",
