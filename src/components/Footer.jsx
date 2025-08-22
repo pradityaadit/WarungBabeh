@@ -66,7 +66,7 @@ const Footer = () => {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="https://discord.gg/"
+              href="https://discord.gg/5azrGgux3u"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-amber-500 hover:bg-amber-400 text-blue-900 font-medium rounded-full transition-all"
